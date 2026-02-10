@@ -1,0 +1,125 @@
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.card {
+  background: white;
+  width: 260px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  color: purple;
+}
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  color:white;
+  background: #6b7280;
+} 
+h1 {
+    text-align: center;
+    margin-bottom:100px;
+    margin-top: 50px;
+     color: #111827;
+    font-size: 100px;
+}
+body {
+    background: #f4f6fb;
+}
+.card ul li {
+  color: #6b7280;
+}
+.popular::before {
+  content: "Most Popular";
+  display: block;
+  background: #6366f1;
+  color: white;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: black;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.14);
+}
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .pricing h1 {
+    font-size: 28px;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #01011e;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #6366f1;
+}
+button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #4338ca;
+}
+.popular {
+  transform: scale(1.08);
+  box-shadow: 0 30px 60px rgba(79,70,229,0.2);
+}
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+.card ul li::before {
+    content:"✅";
+}
+
+
+
+
